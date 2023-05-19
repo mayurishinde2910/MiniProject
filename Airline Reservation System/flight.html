@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>Search flights </title>
+<script language="JavaScript" type="text/javascript">
+	function openDetailsForm()
+	{
+		MyWindow=window.open('Detailsform.html','','width=2500,height=2500,left=300,top=250');
+		MyWindow.focus();
+	}
+	function ticketCancel()
+	{
+		MyWindow=window.open('tcancel.html','','width=2500,height=2500,left=300,top=250');
+		MyWindow.focus();
+	}
+</script>
+</head>
+<body background="img1.jpg" style="background-repeat: no-repeat; background-size: fixed">
+<form name="form3" method="get">
+<img src="logo.png" width="150" height="50" border="2">
+<br>
+<button onclick="ticketCancel()" name="cancel" style="font-size:20px; width=100%; float:right"><u>Ticket Cancellation</u></button>
+<font face="times new roman"><h2><u>FLIGHT RESERVATION</u></h2></font>
+	<table align="center" width="500" height="350" border="0" >
+		<center>
+			<h1>Check Availability for Direction</h1>
+			<tr><td>
+				<label for="from">FROM :</label>
+						<td><select required name='from' onchange='this.form.()'>
+								<option value="">Select a location...</option>
+								<option value="Cambodia">Cambodia</option>
+								<option value="Hong Kong">Hong Kong</option>
+								<option value="India">India</option>
+								<option value="Japan">Japan</option>
+								<option value="Korea">Korea</option>
+								<option value="Laos">Laos</option>
+								<option value="Myanmar">Myanmar</option>
+								<option value="Singapore">Singapore</option>
+								<option value="Thailand">Thailand</option>
+								<option value="Vietnam">Vietnam</option>
+						</td></select>
+			</td></tr>
+			<tr><td>
+				<label for="to">TO :</label>
+						<td><select required name='to' onchange='this.form.()'>
+								<option value="">Select a location...</option>
+								<option value="Cambodia">Cambodia</option>
+								<option value="Hong Kong">Hong Kong</option>
+								<option value="India">India</option>
+								<option value="Japan">Japan</option>
+								<option value="Korea">Korea</option>
+								<option value="Laos">Laos</option>
+								<option value="Myanmar">Myanmar</option>
+								<option value="Singapore">Singapore</option>
+								<option value="Thailand">Thailand</option>
+								<option value="Vietnam">Vietnam</option>
+						</td></select>
+			</td></tr>
+			<tr><td>
+				<label for="departure">DEPARTURE DATE :</label>
+				<td><input name="departure" type="date" id="departure" required="" onchange='this.form.()'></td>
+			</td></tr>
+			<tr><td>
+				<label for="return">RETURN DATE :</label>
+				<td><input name="return" type="date" id="return" required="" onchange='this.form.()'></td>
+			</td></tr>
+			<tr><td>
+				<label for="return">NO OF PASSENGERS:</label>
+				<td><input name="return" type="text" id="pno" required="" onchange='this.form.()'></td>
+			</td></tr>
+			<tr><td>
+				<label for="round">ROUND</label>
+				<input type="radio" name="trip" id="round" value="round" required="required" onchange='this.form.()'>
+				<label for="oneway">ONEWAY</label>
+				<input type="radio" name="trip" id="oneway" value="oneway" required="required" onchange='this.form.()'>
+				<td><button onclick="openDetailsForm()" name="submit" style="font-size:30px; width=100%;">Order Ticket Now</button></td>
+			</td></tr>
+		</center>
+	</table>
+<table align="center" width="700" height="500" border="0" cellpadding="35">
+		<tr>
+		<td align="center" valign="bottom">
+			<img src="img3.jpg" border="2" width="320" height="250" >
+		</td>
+		<td align="center" valign="bottom">
+			<img src="img4.jpg" border="2" width="320" height="250" >
+		</td>
+		<td align="center" valign="bottom">
+			<img src="img5.jpg" border="2" width="320" height="250" >
+		</td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>

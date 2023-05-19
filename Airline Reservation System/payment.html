@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>Payment page</title>
+<script language="JavaScript" type="text/javascript">
+	function ticketBooked(form)
+	{
+		alert("Your Ticket Confirmed successfully...");
+		NewWindow = window.open('contact.html','','width=2500,height=2500,left=300,top=250');
+		NewWindow.focus();
+	}
+</script>
+</head>
+<body background="img1.jpg" style="background-repeat: no-repeat; background-size: cover">
+<form name="form6" onsubmit="ticketBooked(this)" method="get">
+<img src="logo.png" width="150" height="50" border="2">
+<br>
+<center>
+<font face="times new roman"><h1>FLIGHT RESERVATION</h1></font>
+</center>
+	<fieldset>
+		<table align="left" width="700" height="500" border="0" >
+				<tr>
+					<th><h2>BILLING DETAILS</h2></th>
+				</tr>	
+				<tr>
+					<th>Name</th></font>
+					<td>:</td>
+					<td><input type="text" name="name" id="name1" placeholder="Enter your name..."></td>
+				</tr>
+				<tr>
+					<th>Email ID:</th>
+					<td>:</td>
+					<td><input type="text" name="email" id="email1" placeholder="Enter your email ID..."></td>
+				</tr>
+				<tr>
+					<th>Country</th>
+					<td>:</td>
+					<td><select required name='country' onchange='this.form.()'>
+						<option value="">Select a country...</option>
+						<option value="Cambodia">Cambodia</option>
+						<option value="Hong Kong">Hong Kong</option>
+						<option value="India">India</option>
+						<option value="Japan">Japan</option>
+						<option value="Korea">Korea</option>
+						<option value="Laos">Laos</option>
+						<option value="Myanmar">Myanmar</option>
+						<option value="Singapore">Singapore</option>
+						<option value="Thailand">Thailand</option>
+						<option value="Vietnam">Vietnam</option>
+					</td></select>
+				</tr>
+				<tr>
+					<th>State</th>
+					<td>:</td>
+					<td><input type="text" name="state" id="state" placeholder="Enter your state..."></td>
+				</tr>
+				<tr>
+					<th>Postal Code</th>
+					<td>:</td>
+					<td><input type="text" name="pincode" id="pincode" placeholder="Enter your postal code..."></td>
+				</tr>
+				<tr>
+					<th>Contact No.</th>
+					<td>:</td>
+					<td><input type="text" name="contact" id="contact1" placeholder="Enter your contact no..."></td>
+				</tr>
+			</table>
+		<table align="right" width="700" height="500" border="0" >
+				<tr>
+					<th><h2>PAYMENT DETAILS</h2></th>
+				</tr>	
+				<tr>
+					<th>Payment Method</th>
+					<td>:</td>
+					<td><select required name='pmethod' onchange='this.form.()'>
+						<option value="">Select a method...</option>
+						<option value="Credit Card">Credit Card</option>
+						<option value="Debit Card">Debit card</option>
+						<option value="MasterCard">MasterCard</option>
+						<option value="RTGS Payment">RTGS Payment</option>
+					</td></select>
+				</tr>
+				<tr>
+					<th>Card Number</th>
+					<td>:</td>
+					<td><input type="text" name="cardno" id="cardno" placeholder="Enter your card no..."></td>
+				</tr>
+				<tr>
+					<th>Expiration Date</th>
+					<td>:</td>
+					<td><input type="text" name="month" id="month" placeholder="Month"> <input type="text" name="year" id="year" placeholder="Year"></td>
+				</tr>
+				<tr>
+					<th>Security Code</th>
+					<td>:</td>
+					<td><input type="text" name="scode" id="scode" placeholder="Enter your Security Code..."></td>
+				</tr>
+				<tr>
+					<th>Amount (in Rupees)</th>
+					<td>:</td>
+					<td><input type="text" name="amt" id="amt" placeholder="Enter Amount..."></td>
+				</tr>
+				<tr>
+					<th><input type="submit" name="submit" value="SUBMIT" style="font-size:30px; width=100%;"></th>
+					<td><input type="reset" name="reset" value="RESET" style="font-size:30px; width=100%;"></td>
+				</tr>
+		</table>
+	</center>
+</fieldset>
+</form>
+</body>
+</html>
+

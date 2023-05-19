@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Ticket Cancel</title>
+<script language="JavaScript" type="text/javascript">
+	function ticketCancel()
+	{
+		alert("Your Ticket Cancelled Successfully....");
+		MyWindow=window.open('home.html','','width=2500,height=2500,left=300,top=250');
+		MyWindow.focus();
+	}
+	function returnback()
+	{
+		MyWindow=window.open('flight.html','','width=2500,height=2500,left=300,top=250');
+		MyWindow.focus();
+	}
+</script>
+</head>
+<body background="img1.jpg" style="background-repeat: no-repeat; background-size: fixed">
+<img src="logo.png" width="150" height="50" border="2">
+<form name="form4">
+	<center>
+		<h2>TICKET CANCELLATION</h2>
+		<h4>Enter Ticket ID:</h4>
+		<input type="text" name=tId" placeholder="Enter ticket ID..." />
+		<br><br><br><button onclick="ticketCancel()" name="cancel" >Cancel Ticket</button>
+		<button onclick="returnback()" name="back" >Return</button>
+	</center>
+</form>
+</body>
+</html>	

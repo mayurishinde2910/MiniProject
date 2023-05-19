@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>Home Page</title>
+<script language="JavaScript" type="text/javascript">         
+ function validateForm(form)
+  {
+    if(form.username.value == "") 
+	{
+      alert("Error: Username cannot be blank!");
+      form.username.focus();
+      return false;
+    }
+    re = /^\w+$/;
+    if(!re.test(form.username.value)) 
+	{
+      alert("Error: Username must contain only letters, numbers and underscores!");
+      form.username.focus();
+      return false;
+    }
+
+    if(form.pwd1.value != "") 
+	{
+      if(form.pwd1.value.length < 6)
+	  {
+        alert("Error: Password must contain at least six characters!");
+        form.pwd1.focus();
+        return false;
+	  }
+      if(form.pwd1.value == form.username.value)
+	  {
+        alert("Error: Password must be different from Username!");
+        form.pwd1.focus();
+        return false;
+      }
+      re = /[0-9]/;
+      if(!re.test(form.pwd1.value))
+	  {
+        alert("Error: password must contain at least one number (0-9)!");
+        form.pwd1.focus();
+        return false;
+      }
+      re = /[a-z]/;
+      if(!re.test(form.pwd1.value)) 
+	  {
+        alert("Error: password must contain at least one lowercase letter (a-z)!");
+        form.pwd1.focus();
+        return false;
+      }
+      re = /[A-Z]/;
+      if(!re.test(form.pwd1.value)) 
+	  {
+        alert("Error: password must contain at least one uppercase letter (A-Z)!");
+        form.pwd1.focus();
+        return false;
+      }
+    } 
+	else 
+	{
+      alert("Error: Please check that you've entered and confirmed your password!");
+      form.pwd1.focus();
+      return false;
+    }
+    alert(document.form2.username.value +", You are Login successfully...");
+	NewWindow = window.open('flight.html','','width=2500,height=2500,left=300,top=250');
+    NewWindow.focus();
+  }
+</script> 
+</head> 
+<body background="img1.jpg" style="background-repeat: no-repeat; background-size:cover" >    
+<form name="form2" onsubmit="validateForm(this)" method="get" > 
+<img src="logo.png" width="150" height="50" border="2">
+<center>
+<font face="comic sans" size="10px"><b>-----Welcome to AIRLINE RESERVATION SYSTEM-----</b></font><br><br><br>
+<font face="comic sans" size="7px"><b>-----Login Here-----</b></font><br><br><br>        
+Username: <INPUT type="text" name="username" placeholder="Enter Username here..."/>
+<BR><BR>
+<P>Password: <INPUT type="password" name="pwd1" placeholder="Enter Password here..."/></p>
+<BR>
+<INPUT type="submit" name="submit" value="Login" />
+<INPUT type="reset" name="reset" value="Reset"/>
+</center>   
+</form>   
+</body> 
+</html> 

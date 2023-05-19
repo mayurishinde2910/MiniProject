@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Contact us page</title>
+<script language="JavaScript" type="text/javascript">
+	function msg(form)
+	{
+		alert("Your Message Sent successfully...");
+		NewWindow = window.open('home.html','','width=2500,height=2500,left=300,top=250');
+		NewWindow.focus();
+	}
+</script>
+</head>
+<body background="img1.jpg" style="background-repeat: no-repeat; background-size: fixed">
+<form name="form7" onsubmit="msg(this)" method ="get">
+<font face="times new roman"><h2><u>CONTACT US</u></h2></font>
+<font face="times new roman"><h3><u>Email-ID: flightGlobal@gmail.com</u></h3></font>
+<center>
+	<font face="comic sans" size="10px"><b>HAVE  SOME  QUESTIONS ?</b></font><br><br><br>
+	<p><img src="img2.png" border ="2" width="600" height="400" style="float:left"></p>
+	
+	<table align="right" width="500" height="200" border="0" >
+				<tr>
+					<td><input type="text" name="name" id="name1" placeholder="Enter your Name..." style="font-size:25px; width=90%;"></td>
+				</tr>
+				<tr>
+					<td><input type="text" name="email" id="email" placeholder="What's your Email..." style="font-size:25px; width=90%;"></td>
+				</tr>
+				<tr>
+					<td><input type="textarea" rows="4" cols="30" name="que" id="que" placeholder="Your Questions..." style="font-size:25px; width=90%;"></td>
+				</tr>
+				<tr>
+					<th><input type="submit" name="submit" value="SEND MESSAGE" style="font-size:30px; width=100%  text-align: center;"></th>
+				</tr>
+		</table>
+</center>
+</form>
+</body>
+</html>
